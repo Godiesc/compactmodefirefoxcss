@@ -1,6 +1,6 @@
 :root{
   --toolbarbutton-inner-padding: 4px !important;
-  --proton-tab-block-margin: 1px 3px !important;
+  --proton-tab-block-margin: 2px 3px !important;
   --tab-min-height:  27px !important;
   --tabs-shadow-size: 0px !important;
   --arrowpanel-menuitem-padding: 5px !important;
