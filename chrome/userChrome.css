@@ -3,7 +3,7 @@
   --proton-tab-block-margin: 2px 3px !important;
   --tab-min-height:  27px !important;
   --tabs-shadow-size: 0px !important;
-  --tab-border-radius: 8px 1px 8px 1px !important;
+  --tab-border-radius: 8px 1px !important;
   --arrowpanel-menuitem-padding: 5px !important;
   --panel-font-size: 1.1em !important;
   --arrowpanel-padding: 0.8em !important;
@@ -15,15 +15,22 @@
 
 menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 
-.tab-close-button{margin-inline-start: -2px !important;width: 15px !important;height: 15px !important;padding: 3px !important; margin-inline-end:-6px !important; }
+.tab-close-button{margin-inline-start: -2px !important;width: 15px !important;height: 15px !important;padding: 3px !important; margin-inline-end:-6px !important}
 
 #tabbrowser-tabs{ --uc-tabs-scrollbutton-border: 2px }
 #scrollbutton-up, #scrollbutton-down{ border-block-width: var(--uc-tabs-scrollbutton-border,0px) !important; }
 
 .sharing-icon, #permissions-granted-icon, #tracking-protection-icon, .notification-anchor-icon, #blocked-permissions-container 
-               > .blocked-permission-icon {  heigh: 14px !important; width :14px !important;}
+  >.blocked-permission-icon {  heigh: 14px !important; width :14px !important;}
 
-#identity-icon {color: #2cf62c !important; heigh: 14px !important; width :14px !important;}
+#identity-icon{color: #2cf62c !important; heigh: 14px !important; width :14px !important}
+
+.urlbar-icon {padding: 4px !important}
+
+#urlbar{min-height: 26px !important; margin-block: 0px 0px!important;font-size: 1.12em !important;text-shadow: none !important;}
+#urlbar-background{margin-block: 0px 0px; !important;}
+#urlbar-container{margin-block: 0px -6px;}
+#searchbar {min-height: 26px !important;text-shadow: none !important; font-size: 1.12em !important; margin-block: -3px !important;}
 
 .PanelUI-subView toolbarseparator.proton-zap {border-image: var(--panel-separator-zap-gradient) 1;}
 
@@ -41,12 +48,6 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 .identity-color-pink {--identity-tab-color: #ff33bb !important; --identity-icon-color: #ff33bb !important;--tab-line-color:#e22fa7 !important;}
 .identity-color-purple {--identity-tab-color: #813E9D !important; --identity-icon-color: #813E9D !important;--tab-line-color:#703988 !important;}
 
-.tab-icon-image:not([pinned]){ opacity: 1 !important}
-.tab-icon-overlay:not([pinned]){opacity: 1 !important; border-radius: 9px !important; top: -6px; inset-inline-end: -11px;z-index: 1;margin-right: 11px !important;
-  color: #ffffff !important; background-color: #00000070 !important;}
-.tab-icon-overlay:not([crashed])[soundplaying]:hover, .tab-icon-overlay:not([crashed])[muted]:hover, .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
-    background-color: white !important; color: black !important;}
-
 .identity-color-blue >.tab-stack > .tab-content:not([selected="true"]) .tab-label{color: #1bbfff !important;}
 .identity-color-green >.tab-stack > .tab-content:not([selected="true"]) .tab-label{color: #6be19c !important; } 
 .identity-color-orange >.tab-stack > .tab-content:not([selected="true"]) .tab-label{color: #ebc247 !important; } 
@@ -54,32 +55,25 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 .identity-color-pink >.tab-stack > .tab-content:not([selected="true"]) .tab-label{color: #ff99eb !important;} 
 .identity-color-purple >.tab-stack > .tab-content:not([selected="true"]) .tab-label{color: #caa4da !important;} 
 
-.identity-color-blue> .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #2574A7 7%, transparent) !important;
+.identity-color-blue> .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #2574A7 10%, transparent) !important;
   border-radius:0px !important; margin-top: 3px !important; margin-bottom: 3px !important;}
-.identity-color-green .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #1E934F 7%, transparent) !important;
+.identity-color-green .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #1E934F 10%, transparent) !important;
   border-radius:0px !important; margin-top: 3px !important; margin-bottom: 3px !important;}
-.identity-color-orange .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #e67e22 7%, transparent) !important;
+.identity-color-orange .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #e67e22 10%, transparent) !important;
   border-radius:0px !important; margin-top: 3px !important; margin-bottom: 3px !important;}
-.identity-color-red .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #a0392b 7%, transparent) !important;
+.identity-color-red .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #a0392b 10%, transparent) !important;
   border-radius:0px !important; margin-top: 3px !important; margin-bottom: 3px !important;}
-.identity-color-pink .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #ff99eb 7%, transparent) !important;
+.identity-color-pink .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #ff99eb 10%, transparent) !important;
   border-radius:0px !important; margin-top: 3px !important; margin-bottom: 3px !important;}
-.identity-color-purple .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #813E9D 7%, transparent) !important;
+.identity-color-purple .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #813E9D 10%, transparent) !important;
   border-radius:0px !important; margin-top: 3px !important; margin-bottom: 3px !important;}
 
-.identity-color-blue >.tab-stack > .tab-content[selected="true"] .tab-icon-sound-label{ color:#1bbfff !important;}
-.identity-color-green >.tab-stack > .tab-content[selected="true"] .tab-icon-sound-label{ color:#6be19c !important;}
-.identity-color-orange >.tab-stack > .tab-content[selected="true"] .tab-icon-sound-label{ color:#ebc247 !important;}
-.identity-color-red >.tab-stack > .tab-content[selected="true"] .tab-icon-sound-label{ color:#ff7575 !important;}
-.identity-color-pink >.tab-stack > .tab-content[selected="true"] .tab-icon-sound-label{ color:#ff99eb !important;}
-.identity-color-purple >.tab-stack > .tab-content[selected="true"] .tab-icon-sound-label{ color:#caa4da !important;}
+.tab-icon-image:not([pinned]){ opacity: 1 !important}
+.tab-icon-overlay:not([pinned]){opacity: 1 !important; border-radius: 9px !important; top: -6px; inset-inline-end: -11px;z-index: 1;margin-right: 11px !important;
+  color: #ffffff !important; background-color: #00000070 !important;}
 
-.tabbrowser-tab[multiselected]:-moz-lwtheme{border-radius: 6px !important;background-color:  color-mix(in srgb, #005866 17%, transparent) !important;
-    color: #33e4ff !important; --tab-line-color:#295170 !important;}
+.tab-icon-overlay:not([crashed])[soundplaying]:hover, .tab-icon-overlay:not([crashed])[muted]:hover, .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
+    background-color: white !important; color: black !important;}
 
-.urlbar-icon {padding: 4px !important}
-
-#urlbar{min-height: 26px !important; margin-block: 0px 0px!important;font-size: 1.12em !important;text-shadow: none !important;}
-#urlbar-background{margin-block: 0px 0px; !important;}
-#urlbar-container{margin-block: 0px -6px;}
-#searchbar {min-height: 26px !important;text-shadow: none !important; font-size: 1.12em !important; margin-block: -3px !important;}
+.tabbrowser-tab[multiselected]:-moz-lwtheme{border-radius: 15px 15px !important; background-color:  color-mix(in srgb, #005866 10%, transparent) !important;
+    color: #33e4ff !important; --tab-line-color:#295170 !important;   .tab-label-color: white !important;}
