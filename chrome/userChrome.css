@@ -3,6 +3,7 @@
   --proton-tab-block-margin: 2px 3px !important;
   --tab-min-height:  27px !important;
   --tabs-shadow-size: 0px !important;
+  --tab-border-radius: 8px 1px 8px 1px !important;
   --arrowpanel-menuitem-padding: 5px !important;
   --panel-font-size: 1.1em !important;
   --arrowpanel-padding: 0.8em !important;
@@ -40,12 +41,11 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 .identity-color-pink {--identity-tab-color: #ff33bb !important; --identity-icon-color: #ff33bb !important;--tab-line-color:#e22fa7 !important;}
 .identity-color-purple {--identity-tab-color: #813E9D !important; --identity-icon-color: #813E9D !important;--tab-line-color:#703988 !important;}
 
-.tab-icon-stack:is([muted],[soundplaying],[activemedia-blocked]):not([pinned]){grid-template-rows:5px; 5px; 5px;grid-template-columns: 9px;9px;}
-.tab-icon-image:not([pinned]){ opacity: 1 !important; grid-column: 1 !important; grid-row-start: 2 !important; grid-row-end: 3 !important;}
-.tab-icon-overlay:is([muted],[soundplaying],[activemedia-blocked]):not([pinned]){grid-column: 2 !important;margin-right: 2px !important;
- color: #ffffff !important; background-color: #00000030 !important;!important; border-radius: 9px !important;}
-.tab-icon-overlay{ opacity: 1 !important;}
-
+.tab-icon-image:not([pinned]){ opacity: 1 !important}
+.tab-icon-overlay:not([pinned]){opacity: 1 !important; border-radius: 9px !important; top: -6px; inset-inline-end: -11px;z-index: 1;margin-right: 11px !important;
+  color: #ffffff !important; background-color: #00000070 !important;}
+.tab-icon-overlay:not([crashed])[soundplaying]:hover, .tab-icon-overlay:not([crashed])[muted]:hover, .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
+    background-color: white !important; color: black !important;}
 
 .identity-color-blue >.tab-stack > .tab-content:not([selected="true"]) .tab-label{color: #1bbfff !important;}
 .identity-color-green >.tab-stack > .tab-content:not([selected="true"]) .tab-label{color: #6be19c !important; } 
