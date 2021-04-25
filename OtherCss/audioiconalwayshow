@@ -1,0 +1,8 @@
+/* Posiciona el icono de audio sobre el favicon */
+.tab-icon-image:not([pinned]){ opacity: 1 !important}
+.tab-icon-overlay:not([pinned]){opacity: 1 !important; border-radius: 9px !important; top: -6px; inset-inline-end: -11px;z-index: 1;margin-right: 11px !important;
+  color: #ffffff !important; background-color: #00000070 !important;}
+
+/* Muestra el ícono más visible al posicionar el puntero sobre el */
+.tab-icon-overlay:not([crashed])[soundplaying]:hover, .tab-icon-overlay:not([crashed])[muted]:hover, .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
+    background-color: white !important; color: black !important;}
