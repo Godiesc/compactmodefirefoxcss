@@ -1,4 +1,4 @@
-# compactmodefirefoxcss
+# Compact Mode Firefox Css
 Reglas Css para volver compacto a Firefox
 
 Pasos para aplicar este tema:
