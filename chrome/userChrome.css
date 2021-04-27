@@ -106,8 +106,8 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 .tabbrowser-tab[multiselected]:-moz-lwtheme{border-radius: 15px 15px !important; background-color:  color-mix(in srgb, #005866 10%, transparent) !important;
     color: #33e4ff !important; --tab-line-color:#295170 !important;}
 
-/*Color de las flechas del menú de hamburguesa*/
-.subviewbutton-nav::after { fill: aqua !important}
+/*Color de las flechas de menús desplegables*/
+#identity-popup, #permission-popup, #protections-popup, .panel-header > .subviewbutton-back, .PanelUI-subView .subviewbutton-nav::after{ fill: aqua !important}
 
 /*Personalización de colores y presentación de pestañas en contenedores*/
 .identity-color-blue {--identity-tab-color: #2574A7 !important; --identity-icon-color: #2574A7 !important;--tab-line-color:#295170 !important;}
