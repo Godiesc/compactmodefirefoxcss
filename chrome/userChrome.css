@@ -72,10 +72,10 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 
 /*"Íconos de la urlbar más pequeños"*/
 .sharing-icon, #permissions-granted-icon, #tracking-protection-icon, .notification-anchor-icon, #blocked-permissions-container 
-  > .blocked-permission-icon {  heigh: 14px !important; width :14px !important;}
+  > .blocked-permission-icon {  height: 14px !important; width :14px !important;}
 
 /*"Color verde del ícono de candado de web segura"*/
-#identity-icon {color: #2cf62c !important; heigh: 14px !important; width :14px !important;}
+#identity-icon {color: #2cf62c !important; height: 14px !important; width :14px !important;}
 
 /*"ícono de marcadores y vista de lectura más pequeños"*/
 .urlbar-icon {padding: 4px !important}
