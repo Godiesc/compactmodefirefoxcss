@@ -31,7 +31,7 @@
 
   --toolbarbutton-inner-padding: 4px !important;
   --proton-tab-block-margin: 2px 3px !important;
-  --tab-min-height:  27px !important;
+  --tab-min-height:  25px !important;
   --tabs-shadow-size: 0px !important;
   --tab-border-radius: 4px !important;
   --arrowpanel-menuitem-padding: 4px !important;
@@ -92,7 +92,7 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 
 /*Label de medios "Reproduciendo" modifiado*/
 .tab-secondary-label:is([soundplaying], [pictureinpicture]) {display: -moz-box !important; margin-top:-2px !important; color:#00dbfd !important;
- font-weight: bold !important; text-shadow: 0px 0px 2px #000000 !important; }
+ font-weight: bold !important; text-shadow: 0px 0px 2px #000000 !important; margin-bottom: 2px !important;}
 .tab-secondary-label:is([muted], [activemedia-blocked]) {display: none}
 
 /*ícono de sonido simpre visible en pestañas con sonido, sin dejar de mostrar el favicon*/
