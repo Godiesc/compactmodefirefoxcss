@@ -136,3 +136,14 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
   border-radius:0px !important; margin-top: 3px !important; margin-bottom: 3px !important;}
 .identity-color-purple .tab-stack> .tab-content[selected="true"] {background-color:color-mix(in srgb, #813E9D 7%, transparent) !important;
   border-radius:0px !important; margin-top: 3px !important; margin-bottom: 3px !important;}
+
+/*Color al pasar el puntero por los diferentes items de menús principales*/
+.protections-popup-category:hover, .protections-popup-footer-button:hover, #protections-popup-show-report-stack:hover > .protections-popup-footer-button,
+  panelview .toolbarbutton-1:not([disabled], [open], :active):is(:hover), toolbarbutton.subviewbutton:not([disabled], [open], :active):is(:hover), 
+ .navigable.subviewbutton:not([disabled], [open], :active):is(:hover), menu.subviewbutton:not([disabled], :active)[_moz-menuactive], 
+  menuitem.subviewbutton:not([disabled], :active)[_moz-menuactive], .widget-overflow-list .toolbarbutton-1:not([disabled], [open], :active):is(:hover),
+ .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton:not([disabled], [open], :active):is(:hover) {
+ background-color:color-mix(in srgb, #1ae0ff 25%, transparent) !important}
+
+/*Linea de arcoiris en los menús principales*/
+.PanelUI-subView > toolbarseparator {border-image: var(--panel-separator-zap-gradient) 1 !important;}
