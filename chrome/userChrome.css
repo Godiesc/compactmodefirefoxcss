@@ -149,4 +149,4 @@ background-color: white !important; color: black !important; fill-opacity: 1 !im
 .PanelUI-subView > toolbarseparator {border-image: var(--panel-separator-zap-gradient) 1 !important;}
 
 /*Vizualización correcta del porcentaje de zoom mostrado en la urlbar*/
-#urlbar-zoom-button {padding: 0px 2px; !important}
+#urlbar-zoom-button {padding: 0px 2px !important}
