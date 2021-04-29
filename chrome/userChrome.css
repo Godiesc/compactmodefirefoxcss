@@ -97,10 +97,10 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 
 /*ícono de sonido simpre visible en pestañas con sonido, sin dejar de mostrar el favicon*/
 .tab-icon-image:not([pinned]){ opacity: 1 !important}
-.tab-icon-overlay:not([pinned]){opacity: 1 !important; border-radius: 9px !important; top: -4px; inset-inline-end: -9px;z-index: 1;margin-right: 11px !important;
-  color: #ffffff !important; background-color: #00000040 !important;}
+.tab-icon-overlay:not([pinned]){opacity: 1 !important; border-radius: 9px !important; top: -4px; inset-inline-end: -12px;z-index: 1;margin-right: 13px !important;
+color: #ffffff !important; background-color: #00000040 !important; fill-opacity: 1 !important; padding: 1px !important; height: 14px !important; width: 14px !important}
 .tab-icon-overlay:not([crashed])[soundplaying]:hover, .tab-icon-overlay:not([crashed])[muted]:hover, .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
-    background-color: white !important; color: black !important;}
+background-color: white !important; color: black !important; fill-opacity: 1 !important;padding: 1px !important; height: 14px !important; width: 14px !important}
 
 /*Regla para visualizar mejor el seleccionar varias pestañas*/
 .tabbrowser-tab[multiselected]:-moz-lwtheme{border-radius: 15px 15px !important; background-color:  color-mix(in srgb, #005866 10%, transparent) !important;
