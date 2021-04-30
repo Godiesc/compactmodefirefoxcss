@@ -34,7 +34,7 @@
   --tab-min-height:  27px !important;
   --tabs-shadow-size: 0px !important;
   --tab-border-radius: 8px 1px !important;                           
-  --arrowpanel-menuitem-padding: 4px !important;
+  --arrowpanel-menuitem-padding: 5px !important;
   --panel-font-size: 1.1em !important;
   --arrowpanel-padding: 0.8em !important;
   --arrowpanel-dimmed: color-mix(in srgb, #1ae0ff 35%, transparent) !important;
