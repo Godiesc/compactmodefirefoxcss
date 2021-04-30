@@ -7,7 +7,9 @@ Copia la carpeta chrome y el archivo user.js dentro de la carpeta de perfil de t
 Adicionalmente puedes usar el tema: https://addons.mozilla.org/es/firefox/addon/beautifultotaldark/
 
 (EN) CSS rules to make Firefox compact
+
 Steps to apply this theme: copy the Chrome folder and the user.js file into your Firefox profile directory. To find out your profile directory go to about:support or about:profiles.
+
 Additionally, you can use this theme: https://addons.mozilla.org/es/firefox/addon/beautifultotaldark/
 
 
