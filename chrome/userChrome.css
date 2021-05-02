@@ -21,7 +21,7 @@
   --toolbar-bgcolor: #363540 !important;                         /*"Color de la toolbar, necesario para que al cambiar de tema se mantengan los colores"*/
   --toolbar-color: #1a1b25 !important;                           /*"toolbar_field":"#1a1b25"*/
   --toolbarseparator-color: #363540 !important;                  /*"toolbar_vertical_separator": "#363540"*/
-  --chrome-content-separator-color: #181818 !important;          /*"toolbar_bottom_separator": "#181818"*/
+  --chrome-content-separator-color: #1a1b25 !important;          /*"toolbar_bottom_separator": "#181818"*/
   --lwt-toolbarbutton-icon-fill: #00dbfd !important;             /*"icons" : "#00dbfd"*/
   --lwt-toolbarbutton-icon-fill-attention: #00dbfd !important;   /*"icons_attention": "#00dbfd"*/
   --toolbarbutton-icon-fill: #00dbfd !important;                 /*"icons_attention": "#00dbfd"*/
@@ -29,6 +29,7 @@
   --toolbarbutton-active-background: #131217 !important;         /*"button_background_active": "#131217"*/
   --autocomplete-popup-highlight-background: #006f80 !important; /*"popup_highlight": "#006f80"*/
 
+  --panel-separator-zap-gradient: linear-gradient(to right, #7d211c,green,blue,#FFBD4F,#cc372f) !important;
   --toolbarbutton-inner-padding: 4px !important;
   --proton-tab-block-margin: 2px 3px !important;
   --tab-min-height:  27px !important;
@@ -44,7 +45,7 @@
 }
 
 #navigator-toolbox{--tabs-border-color: #141319 !important;}              /*"toolbar_top_separator": "#17161c"*/
-#tabbrowser-tabs {--tab-line-color: #126e82 !important}                   /*"tab_line": "#126e82"*/
+#tabbrowser-tabs {--tab-line-color: #15849d !important}                   /*"tab_line": "#126e82"*/
 .browser-toolbar:not(.titlebar-color) {color: #d3d3d3 !important;}        /*"bookmark_text": "#b3d9ff"*/
 
 /*"personalizar barra de busqueda"*/
@@ -57,7 +58,7 @@
     background-color: #017f72 !important;color: #ffffff !important}
 
 /*"toolbar_bottom_separator"*/
-#navigator-toolbox { border-bottom: 0px solid #252525 !important;}
+#navigator-toolbox { border-bottom: 1px solid #1d1e28 !important;}
 
 /*"Menú con menos espacios"*/
 menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;} 
@@ -164,3 +165,14 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 
 /*Vizualización correcta del porcentaje de zoom mostrado en la urlbar*/
 #urlbar-zoom-button {padding: 0px 2px !important}
+
+/*linea gradiente*/
+.tab-background {	position: relative}
+.tab-background::after { width: 97% !important; background: var(--panel-separator-zap-gradient);  position: absolute;
+	content: '';	height: 1px;	left: 0;		right: 6;	top: 0;  margin-top: -1px !important;  margin-left: 5px !important;	transform: scale(0, 1);
+	transform-origin: center center;}
+.tab-background[selected="true"]::after {	transform: scale(1, 1); opacity: 0.5 !important;}
+
+/*Brillo de pestaña activa*/
+.tab-content[selected="true"] {background-color:color-mix(in srgb, #295170 15%, transparent) !important;
+  border-radius:0px !important; margin-top: 2px !important; margin-bottom: 3px !important;}
