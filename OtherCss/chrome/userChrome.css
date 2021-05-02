@@ -29,7 +29,7 @@
   --toolbarbutton-active-background: #131217 !important;         /*"button_background_active": "#131217"*/
   --autocomplete-popup-highlight-background: #006f80 !important; /*"popup_highlight": "#006f80"*/
 
-  --panel-separator-zap-gradient: linear-gradient(to right,rgb(144, 89, 255,0.3),rgb(255, 74, 162),rgb(255, 162, 0),rgb(255, 74, 162),rgb(144, 89, 255,0.3)) !important;
+  --panel-separator-zap-gradient: linear-gradient(to right,rgb(144, 89, 255,0.3),rgb(255, 74, 162),#FFBD4F,rgb(255, 74, 162),rgb(144, 89, 255,0.3)) !important;
   --toolbarbutton-inner-padding: 4px !important;
   --proton-tab-block-margin: 2px 3px !important;
   --tab-min-height:  27px !important;
