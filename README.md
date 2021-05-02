@@ -14,7 +14,7 @@ Steps to apply this theme: Copy the Chrome folder and the user.js file into your
 
 Additionally, you can use this theme: https://addons.mozilla.org/es/firefox/addon/beautifultotaldark/
 
-<hr style="border:15px; color: aqua;"><hr style="border:2px;">
+<hr style="border:15px;"><hr style="border:2px;">
 
 ![CompactTradicional](https://user-images.githubusercontent.com/22057609/116818683-4a685c80-ab32-11eb-964f-83da29f367af.png)
 
