@@ -100,11 +100,11 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 .tab-icon-image:not([pinned]){ opacity: 1 !important}
 .tab-icon-overlay:not([pinned])[soundplaying]{
   opacity: 1 !important; border-radius: 9px !important; top: -4px; inset-inline-end: -12px;z-index: 1;margin-right: 14px !important;
-  color: #ffffff !important; background-color: #00000030 !important; fill-opacity: 1 !important; padding: 0px !important; height: 14px !important; 
+  color: #ffffff !important; background-color: #00000000 !important; fill-opacity: 1 !important; padding: 0px !important; height: 14px !important; 
   width: 14px !important;}
 .tab-icon-overlay:not([pinned]), .tab-icon-overlay:not([crashed])[muted], .tab-icon-overlay:not([crashed])[activemedia-blocked] 
   {opacity: 1 !important; border-radius: 9px !important; top: -4px; inset-inline-end: -12px;z-index: 1;margin-right: 14px !important;
-  color: #ffffff !important; background-color: #00000030 !important; padding: 0px !important; height: 14px !important; 
+  color: #ffffff !important; background-color: #00000000 !important; padding: 0px !important; height: 14px !important; 
   width: 14px !important;}
 .tab-icon-overlay:not([crashed])[soundplaying]:hover, .tab-icon-overlay:not([crashed])[muted]:hover, .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover { 
  background-color: white !important; color: black !important; opacity: 1 !important; padding: 0px !important; height: 14px !important; width: 14px !important}
