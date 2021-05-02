@@ -83,7 +83,7 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 
 /*"Urlbar y Search-bar más pequeñas"*/
 #urlbar{min-height: 26px !important; margin-block: 0px 0px!important;font-size: 1.12em !important;text-shadow: none !important;}
-#urlbar-background{margin-block: 0px 0px; !important;}
+#urlbar-background{margin-block: 0px 0px !important;}
 #urlbar-container{margin-block: 0px -4px;}
 #searchbar {min-height: 26px !important;text-shadow: none !important; font-size: 1.12em !important; margin-block: -3px !important;}
 
