@@ -29,7 +29,7 @@
   --toolbarbutton-active-background: #131217 !important;         /*"button_background_active": "#131217"*/
   --autocomplete-popup-highlight-background: #006f80 !important; /*"popup_highlight": "#006f80"*/
 
-  --panel-separator-zap-gradient: linear-gradient(to right, #7d211c,green,turquoise,orange,#7d211c) !important;
+  --panel-separator-zap-gradient: linear-gradient(to right,rgb(144, 89, 255,0.3),rgb(255, 74, 162),rgb(255, 189, 79),rgb(255, 74, 162),rgb(144, 89, 255,0.3)) !important;
   --toolbarbutton-inner-padding: 4px !important;
   --proton-tab-block-margin: 2px 3px !important;
   --tab-min-height:  27px !important;
@@ -100,11 +100,11 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 .tab-icon-image:not([pinned]){ opacity: 1 !important}
 .tab-icon-overlay:not([pinned])[soundplaying]{
   opacity: 1 !important; border-radius: 9px !important; top: -4px; inset-inline-end: -12px;z-index: 1;margin-right: 14px !important;
-  color: #ffffff !important; background-color: #00000030 !important; fill-opacity: 1 !important; padding: 0px !important; height: 14px !important; 
+  color: #ffffff !important; background-color: #00000000 !important; fill-opacity: 1 !important; padding: 0px !important; height: 14px !important; 
   width: 14px !important;}
 .tab-icon-overlay:not([pinned]), .tab-icon-overlay:not([crashed])[muted], .tab-icon-overlay:not([crashed])[activemedia-blocked] 
   {opacity: 1 !important; border-radius: 9px !important; top: -4px; inset-inline-end: -12px;z-index: 1;margin-right: 14px !important;
-  color: #ffffff !important; background-color: #00000030 !important; padding: 0px !important; height: 14px !important; 
+  color: #ffffff !important; background-color: #00000000 !important; padding: 0px !important; height: 14px !important; 
   width: 14px !important;}
 .tab-icon-overlay:not([crashed])[soundplaying]:hover, .tab-icon-overlay:not([crashed])[muted]:hover, .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover { 
  background-color: white !important; color: black !important; opacity: 1 !important; padding: 0px !important; height: 14px !important; width: 14px !important}
@@ -171,9 +171,10 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 .tab-background::after { width: 98% !important; background: var(--panel-separator-zap-gradient);  position: absolute;
 	content: '';	height: 1px;	left: 0;		right: 6;	top: 0;  margin-top: -1px !important;  margin-left: 2px !important;	transform: scale(0, 1);
 	transform-origin: center center;}
-.tab-background[selected="true"]::after {	transform: scale(1, 1); opacity: 0.6 !important;}
+.tab-background[selected="true"]::after {	transform: scale(1, 1); opacity: 0.8 !important;}
 .PanelUI-subView toolbarseparator.proton-zap {border-image: var(--panel-separator-zap-gradient) 1 !important; opacity: 0.7 !important;}
 
 /*Brillo de pestaña activa*/
 .tab-content[selected="true"] {background-color:color-mix(in srgb, #295170 15%, transparent) !important;
   border-radius:0px !important; margin-top: 2px !important; margin-bottom: 3px !important;}
+
