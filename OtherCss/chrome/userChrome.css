@@ -166,13 +166,6 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 /*Vizualización correcta del porcentaje de zoom mostrado en la urlbar*/
 #urlbar-zoom-button {padding: 0px 2px !important}
 
-/*linea gradiente*/
-.tab-background {	position: relative}
-.tab-background::after { width: 98% !important; background: var(--panel-separator-zap-gradient);  position: absolute;	content: '';	
-  height: 1px;	left: 0;top: 0;  margin-top: -1px !important; margin-left: 1px !important;	transform: scale(0, 1);	transform-origin: center center;}
-.tab-background[selected="true"]::after {	transform: scale(1, 1); opacity: 0.8 !important;}
-.PanelUI-subView toolbarseparator.proton-zap {border-image: var(--panel-separator-zap-gradient) 1 !important; opacity: 0.7 !important;}
-
 /*Brillo de pestaña activa*/
 .tab-content[selected="true"] {background-color:color-mix(in srgb, #295170 15%, transparent) !important;
   border-radius:0px !important; margin-top: 2px !important; margin-bottom: 3px !important;}
