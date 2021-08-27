@@ -1,7 +1,7 @@
 :root{
   --lwt-accent-color: #141319 !important;                        /*"frame": "#17161c" */
   --lwt-text-color: #c3c3c3 !important;                          /*"tab_background_text": "#c3c3c3"*/
-  --arrowpanel-background: #1c1b22Fa !important;                 /*"popup": "#1c1b22Fa"*/
+  --arrowpanel-background: #1c1b22FD !important;                 /*"popup": "#1c1b22Fa"*/
   --arrowpanel-color: #dfdfdf !important;                        /*"popup_text": "#dfdfdf"*/
   --arrowpanel-border-color: #304f60 !important;                 /*"popup_border": "#304f60"*/
   --lwt-popup-brighttext-url-color: #00b1cc !important;          /*"color de label: No funciona este sitio?"*/
@@ -35,7 +35,7 @@
   --tab-block-margin: 2px 3px !important;
   --tab-min-height:  27px !important;
   --tabs-shadow-size: 0px !important;
-  --tab-border-radius: 8px 1px !important;                           
+  --tab-border-radius: 4px 1px !important;                           
   --arrowpanel-menuitem-padding: 5px !important;
   --panel-font-size: 1.1em !important;
   --arrowpanel-padding: 0.8em !important;
@@ -93,7 +93,7 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 .tab-context-line{-moz-box-ordinal-group: 2 !important; opacity: 1 !important;transition: none !important;}
 
 /*Label de medios "Reproduciendo" modifiado*/
-.tab-secondary-label:is([soundplaying], [pictureinpicture]) {display: -moz-box !important; margin-top:-2px !important; color:#00dbfd !important;
+.tab-secondary-label:is([soundplaying], [pictureinpicture]) {display: -moz-box !important; margin-top:-4px !important; color:#00dbfd !important;
  font-weight: bold !important; text-shadow: 0px 0px 2px #000000 !important;}
 .tab-secondary-label:is([muted], [activemedia-blocked]) {display: none}
 
@@ -167,6 +167,16 @@ menupopup > menuitem, menupopup > menu{ padding-block: 0.3em !important;}
 /*Vizualización correcta del porcentaje de zoom mostrado en la urlbar*/
 #urlbar-zoom-button {padding: 0px 2px !important}
 
-/*Brillo de pestaña activa*/
-.tab-content[selected="true"] {background-color:color-mix(in srgb, #295170 15%, transparent) !important;
-  border-radius:0px !important; margin-top: 2px !important; margin-bottom: 3px !important;}
+/*Menú contextual*/
+  /* Menu items border and padding */
+menupopup > menuitem, menupopup > menu { border-radius: 4px !important; margin-left: 4px !important; margin-right: 4px !important;  
+  padding-inline-start: 0.5em !important}
+  /*borde izquierda y derecha del menú contextual*/
+menugroup > menuitem:first-child {padding-left: 4px !important;} 
+menugroup > menuitem:last-child { padding-right: 4px !important;}
+  /* context menu top buttons radius */
+menugroup > menuitem { border-radius: 4px !important; }
+menugroup > menuitem > hbox > image { border-radius: 4px !important;}
+menuseparator { border-top: 1px solid var(--panel-separator-color) !important; padding: 0 !important; margin-left: 4px !important; margin-right: 4px !important;}
+.menupopup-arrowscrollbox {background: var(--arrowpanel-background) !important; background-color:var(--arrowpanel-background) !important; color: var(--arrowpanel-color);
+  border: 1px solid var(--arrowpanel-border-color) !important}
